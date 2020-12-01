@@ -1,0 +1,75 @@
+﻿@page
+@model EditModel
+@{
+  ViewData["Title"] = "Bestellung bearbeiten";
+}
+
+<h1>Bestellung bearbeiten</h1>
+
+<hr />
+<dl class="row">
+  <dt class="col-sm-2">
+    Bestellnummer
+  </dt>
+  <dd class="col-sm-10">
+    
+
+  </dd>
+  <dt class="col-sm-2">
+    Datum
+  </dt>
+  <dd class="col-sm-10">
+    
+
+  </dd>
+  <dt class="col-sm-2">
+    Kunde
+  </dt>
+  <dd class="col-sm-10">
+    
+
+  </dd>
+  <dt class="col-sm-2">
+    Bestellsumme
+  </dt>
+  <dd class="col-sm-10">
+
+
+  </dd>
+</dl>
+<h4>Bestellpositionen</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        Produkt
+      </th>
+      <th>
+        Preis
+      </th>
+      <th>
+        Bestellmenge
+      </th>
+      <th>
+
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    
+
+
+
+  </tbody>
+</table>
+<h5>Bestellposition hinzufügen</h5>
+
+
+<hr />
+
+
+<a asp-page="../Index">Zurück</a>
+
+@section Scripts {
+  @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

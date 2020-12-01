@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bakery.ImportConsole", "Bakery.ImportConsole\Bakery.ImportConsole.csproj", "{73C37ECB-8481-4BB4-B885-F2A60513CD0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bakery.Wpf", "Bakery.Wpf\Bakery.Wpf.csproj", "{6D7A1CAF-2ABC-414F-B44A-C75C9769AC19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bakery.Core", "Bakery.Core\Bakery.Core.csproj", "{089430A2-CD61-4B03-B5DE-9E2526548F4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bakery.Persistence", "Bakery.Persistence\Bakery.Persistence.csproj", "{8FF7903F-369F-4D71-AD81-4F70D99E7857}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2EC77962-9639-4E22-A7F5-6EC7E99FE915}"
+	ProjectSection(SolutionItems) = preProject
+		OrderItems.csv = OrderItems.csv
+		Products.csv = Products.csv
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{9447DAB5-97DE-4C1D-9CE3-5308235BFF63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bakery.Web", "Bakery.Web\Bakery.Web.csproj", "{E8B4B140-5135-4719-B03A-AFF0B09BBF0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73C37ECB-8481-4BB4-B885-F2A60513CD0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C37ECB-8481-4BB4-B885-F2A60513CD0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C37ECB-8481-4BB4-B885-F2A60513CD0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C37ECB-8481-4BB4-B885-F2A60513CD0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7A1CAF-2ABC-414F-B44A-C75C9769AC19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7A1CAF-2ABC-414F-B44A-C75C9769AC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7A1CAF-2ABC-414F-B44A-C75C9769AC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7A1CAF-2ABC-414F-B44A-C75C9769AC19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089430A2-CD61-4B03-B5DE-9E2526548F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089430A2-CD61-4B03-B5DE-9E2526548F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089430A2-CD61-4B03-B5DE-9E2526548F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089430A2-CD61-4B03-B5DE-9E2526548F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF7903F-369F-4D71-AD81-4F70D99E7857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF7903F-369F-4D71-AD81-4F70D99E7857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF7903F-369F-4D71-AD81-4F70D99E7857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF7903F-369F-4D71-AD81-4F70D99E7857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9447DAB5-97DE-4C1D-9CE3-5308235BFF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9447DAB5-97DE-4C1D-9CE3-5308235BFF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9447DAB5-97DE-4C1D-9CE3-5308235BFF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9447DAB5-97DE-4C1D-9CE3-5308235BFF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B4B140-5135-4719-B03A-AFF0B09BBF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B4B140-5135-4719-B03A-AFF0B09BBF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B4B140-5135-4719-B03A-AFF0B09BBF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B4B140-5135-4719-B03A-AFF0B09BBF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {695C0C9D-4BE2-4A1B-9D32-5A805154E726}
+	EndGlobalSection
+EndGlobal

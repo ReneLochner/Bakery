@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+  ViewData["Title"] = "Bestellübersicht";
+}
+
+<h1>Bestellübersicht</h1>
+<form method="post" asp-page-handler="Search">
+  <div class="form-group">
+    
+    <button type="submit" class="btn btn-primary">Suchen</button>
+    
+
+  </div>
+</form>
+<p>
+  <a class="btn btn-primary" asp-page="./Orders/Create">Neue Bestellung anlegen</a>
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        Bestellnummer
+      </th>
+      <th>
+        Kunde
+      </th>
+      <th>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+   
+
+
+
+
+  </tbody>
+</table>
