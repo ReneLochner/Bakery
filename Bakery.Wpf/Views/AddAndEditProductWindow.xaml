@@ -1,0 +1,38 @@
+﻿<Window x:Class="Bakery.Wpf.Views.AddAndEditProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bakery.Wpf.Views"
+        mc:Ignorable="d"
+        Title="AddAndEditProductWindow" Height="200" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="{Binding TitleString}" Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource FormCaptionStyle}" />
+
+        <Label Grid.Row="1" Grid.Column="0">Produktnr.</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding ProductNr, UpdateSourceTrigger=PropertyChanged}" />
+        <Label Grid.Row="2" Grid.Column="0">Produktname</Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+        <Label Grid.Row="3" Grid.Column="0">Preis</Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Price, UpdateSourceTrigger=PropertyChanged}" />
+
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="0 20 0 0">
+            <Button Command="{Binding CmdSave}" Margin="5 0 10 0">Speichern</Button>
+            <Button Command="{Binding CmdUndo}" Margin="0 0 10 0">Rückgängig</Button>
+            <TextBlock Style="{StaticResource ErrorCaptionStyle}" Text="{Binding DbError}" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,4 +1,3 @@
-﻿using Bakery.Core.Entities;
 ﻿using Bakery.Core.DTOs;
 using Bakery.Core.Entities;
 using System.Collections.Generic;
@@ -12,6 +11,8 @@ namespace Bakery.Core.Contracts
     Task AddRangeAsync(IEnumerable<Product> products);
 
     Task<IEnumerable<ProductDto>> GetAllAsync();
+    Task AddAsync(Product product);
+    Task<Product> GetAsync(int productId);
     Task DeleteAsync(ProductDto product);
     }
 }

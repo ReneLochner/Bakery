@@ -35,6 +35,17 @@ namespace Bakery.Persistence
                 .Select(product => new ProductDto(product))
                 .ToListAsync();
         }
+
+        public async Task AddAsync(Product product)
+        {
+            await _dbContext.Products.AddAsync(product);
+        }
+
+        public async Task<Product> GetAsync(int productId)
+        {
+            return await _dbContext.Products.FindAsync(productId);
+        }
+
         public async Task DeleteAsync(ProductDto product)
         {
             Product dbProduct = await GetAsync(product.Id);
